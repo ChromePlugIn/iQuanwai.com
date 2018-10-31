@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "Quanwai",
+	"version": "1.0.0",
+	"description": "__MSG_pluginDesc__",
+	"content_scripts": 
+	[
+		{
+			"matches": ["<all_urls>"],
+			"js": ["jquery-3.3.1.min.js", "main.js"],
+			"run_at": "document_start"
+		}
+    ],
+    
+	"permissions":
+	[
+		"contextMenus",
+		"tabs",
+		"notifications",
+		"webRequest",
+		"webRequestBlocking",
+		"storage",
+		"http://*/*",
+		"https://*/*"
+	],
+	"homepage_url": "https://www.baidu.com"
+}
